@@ -6,11 +6,11 @@ apply plugin: 'opensearch.opensearchplugin'
 apply plugin: 'opensearch.yaml-rest-test'
 apply plugin: 'opensearch.pluginzip'
 
-def pluginName = 'rename'
+def pluginName = 'helloworld' // 名字影响到各个地方的测试
 def pluginDescription = 'Custom plugin'
 def projectPath = 'org.opensearch'
-def pathToPlugin = 'path.to.plugin'
-def pluginClassName = 'RenamePlugin'
+def pathToPlugin = 'rest.action'
+def pluginClassName = 'HelloWorldPlugin'
 
 tasks.register("preparePluginPathDirs") {
     mustRunAfter clean
